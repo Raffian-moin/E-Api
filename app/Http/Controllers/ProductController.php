@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\product\productCollection;
 use App\Http\Resources\product\productResource;
 use App\Model\product;
 use Illuminate\Http\Request;
@@ -15,7 +16,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return productResource::collection(product::all());
+        return productCollection::collection(product::all());
         return review::all();
     }
 
