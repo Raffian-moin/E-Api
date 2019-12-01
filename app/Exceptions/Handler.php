@@ -61,6 +61,8 @@ class Handler extends ExceptionHandler
                 'errors'=>'incorrect route',
             ],Response::HTTP_NOT_FOUND);
         }
+
+ 
         }
         
         return parent::render($request, $exception);
